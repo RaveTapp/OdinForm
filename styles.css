@@ -20,7 +20,7 @@ body {
     height: 100vh;
 }
 
-.main {
+section.main {
     background-color: var(--light-color);
     height: 100vh;
     display: flex;
@@ -29,18 +29,20 @@ body {
 }
 
 .text {
-    font-size: 1.8rem;
+    font-size: calc(0.8rem + 0.8vw);
     font-weight: 550;
+    margin-left: 50px;
 }
 
 .before-form {
+    display: flex;
+    flex-direction: column;
     height: 30vh;
-    vertical-align: bottom;
-    margin: 0 0 5vh 50px;
+    justify-content:end;
+    margin: 0 5vw 5vh 0;
 }
 
 .before-form p {
-    overflow: auto;
 }
 
 .desc {
@@ -49,21 +51,27 @@ body {
 
 .form-main {
     background-color: white;
-    height: 30vh;
-    margin-bottom: 20px;
+    height: 40vh;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .form-main div {
-    flex: auto;
     display: flex;
+    
+}
+
+.form-main div div {
+    display: flex;
+    flex-direction: column;
     margin-left: 50px;
 }
 
 input {
     height: 3ch;
-    width: 30ch;
+    width: 20vw;
     border-radius: 5px;
     border: 1.5px solid var(--light-color);
 }
@@ -71,10 +79,17 @@ input {
 .create-account {
     background-color: var(--green-color);
     color: white;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding: 12px 4vw;
+    border-radius: 5px;
+    border: 0px;
 }
 
 .login {
     display: flex;
+    margin-left: 50px;
 }
 
 .login a {
