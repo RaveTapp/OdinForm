@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+.image img {
+    width: 30vw;
+    height: 100vh;
+}
