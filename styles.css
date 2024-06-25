@@ -1,7 +1,6 @@
 :root {
     --green-color: #596D48;
     --light-color: #E5E7EB;
-
 }
 
 * {
@@ -75,6 +74,7 @@ section.main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    box-shadow: 2px 2px 5px grey;
 }
 
 .form-main div {
@@ -94,6 +94,16 @@ input {
     border-radius: 5px;
     border: 1.5px solid var(--light-color);
     padding: 5px;
+    outline:none;
+}
+
+input:invalid[type="password"] {
+    border-color: red;
+}
+
+div div input:focus {
+    border-color: cadetblue;
+    box-shadow: 2px 2px 5px black;
 }
 
 .create-account {
