@@ -25,17 +25,26 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .text {
     font-size: 1.8rem;
-    
+    font-weight: 550;
 }
 
 .before-form {
     height: 30vh;
     vertical-align: bottom;
-    margin: 0 0 5% 30px;
+    margin: 0 0 5vh 50px;
+}
+
+.before-form p {
+    overflow: auto;
+}
+
+.desc {
+    margin-bottom: 5vh;
 }
 
 .form-main {
@@ -47,8 +56,16 @@ body {
 }
 
 .form-main div {
+    flex: auto;
     display: flex;
-    margin: auto;
+    margin-left: 50px;
+}
+
+input {
+    height: 3ch;
+    width: 30ch;
+    border-radius: 5px;
+    border: 1.5px solid var(--light-color);
 }
 
 .create-account {
